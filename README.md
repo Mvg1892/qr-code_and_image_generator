@@ -1,23 +1,45 @@
-# Quick Guide
-To run both scripts, you need to install the respective Python packages. <br>
+# Kurze Anleitung
 
-## For the Image Generator, install Pillow:
+## Voraussetzung: Python und pip
+Falls Python noch nicht installiert ist: https://www.python.org/downloads/ <br>
+pip ist ab Python 3.4 automatisch dabei. <br>
+Check per Terminal, ob beides vorhanden ist:
+
+```sh
+python --version
+pip --version
+```
+
+Um die beiden Skripte auszuführen, muss man die jeweiligen Python-Pakete installieren. <br>
+
+## Alle benötigten Pakete auf einmal installieren (empfohlen)
+
+Im Projektordner liegt eine `requirements.txt`, mit der sich alle benötigten Pakete direkt installieren lassen:
+
+```sh
+pip install -r requirements.txt
+```
+
+## Alternativ: Pakete einzeln installieren
+
+### Für den Image-Generator muss man Pillow installieren:
 
 ```sh
 pip install pillow
 ```
-For more information: <br>
+Für mehr Infos:
 https://pypi.org/project/pillow/ <br>
 https://pillow.readthedocs.io/en/stable/installation.html <br>
 
-## For the QR Code Generator, install QRCode:
+### Für den QR-Code Generator muss man QR-Code installieren:
+
 ```sh
 pip install qrcode
 ```
-For more information: <br>
+Für mehr Infos:
 https://pypi.org/project/qrcode/ <br>
 <br>
-Then enter the required data in the script and run it. <br>
-Follow the comments in the code for guidance. <br>
+Dann einfach die benötigten Daten im Skript eintragen und dann das Skript ausführen. <br>
+Dafür einfach die Kommentare im Code beachten. <br>
 <br>
-That's it! :)
+Das war`s. :)

@@ -1,12 +1,19 @@
+import os
 from PIL import Image
 
-# Specify color in hex and desired size
-color = "#dce283"
-img_size = (1920, 1080)
+def generate_image(color, img_size, file_name):
+    directory = os.path.dirname(file_name)
+    if directory and not os.path.isdir(directory):
+        raise FileNotFoundError(f"Zielordner existiert nicht: {directory}")
 
-# Create new image
-img = Image.new("RGB", img_size, color)
+    bild = Image.new("RGB", img_size, color)
+    bild.save(file_name)
 
-# Save image
-storage_location = "/path/to/1920x1080_dce283.jpg"
-img.save(storage_location)
+if __name__ == "__main__":
+    # Specify color in hex and desired size
+    color = "#dce283"
+    img_size = (1920, 1080)
+
+    # Save image, file name and path to save the img, /path/to/img.jpg
+    file_name = "./1920x1080_dce283.jpg" # aktuelles Verzeichnis wo Skript ausgeführt wird
+    generate_image(color, img_size, file_name)
