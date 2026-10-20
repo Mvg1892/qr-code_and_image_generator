@@ -12,7 +12,7 @@ python --version
 pip --version
 ```
 
-Um die beiden Skripte auszuführen, muss man die jeweiligen Python-Pakete installieren. <br>
+Um die Skripte auszuführen, muss man die jeweiligen Python-Pakete installieren. <br>
 
 ## Alle benötigten Pakete auf einmal installieren (empfohlen)
 
@@ -40,6 +40,14 @@ pip install qrcode
 ```
 Für mehr Infos:
 https://pypi.org/project/qrcode/ <br>
+
+### Für den QR-Code Reader muss man OpenCV installieren:
+
+```sh
+pip install opencv-python-headless
+```
+Für mehr Infos:
+https://pypi.org/project/opencv-python-headless/ <br>
 <br>
 Dann einfach die benötigten Daten im Skript eintragen und dann das Skript ausführen. <br>
 Dafür einfach die Kommentare im Code beachten. <br>
@@ -60,7 +68,7 @@ python --version
 pip --version
 ```
 
-To run the two scripts, you need to install the respective Python packages. <br>
+To run the scripts, you need to install the respective Python packages. <br>
 
 ## Install all required packages at once (recommended)
 
@@ -88,6 +96,14 @@ pip install qrcode
 ```
 For more info:
 https://pypi.org/project/qrcode/ <br>
+
+### For the QR Code Reader, you need to install OpenCV:
+
+```sh
+pip install opencv-python-headless
+```
+For more info:
+https://pypi.org/project/opencv-python-headless/ <br>
 <br>
 Then simply enter the required data in the script and run the script. <br>
 Just follow the comments in the code for that. <br>
